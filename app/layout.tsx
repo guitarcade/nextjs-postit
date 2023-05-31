@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} mx-auto max-w-5xl bg-gray-200`}>
         <div className="m-4">
+          {/* @ts-expect-error Server Component */}
           <Nav />
           {children}
         </div>
